@@ -31280,8 +31280,8 @@ self: {
        pname = "servant-swagger";
        version = "1.1.5";
        sha256 = "02m51kgwa2cp72wfq6a96zncywryrnxq778jh2cqmpzjrhml8yjg";
-       revision = "4";
-       editedCabalFile = "0jbi48mcqm4zzdpmpqscs6gvx6lc855fi0hk3ymd5kvpsj00lm9j";
+       revision = "5";
+       editedCabalFile = "1c160wf4q0jyjg03w7hkwkbz0aprvmvzpwa5m944msik2kbvnyl5";
        setupHaskellDepends = [ base Cabal cabal-doctest ];
        libraryHaskellDepends = [
          aeson base bytestring hspec http-media insert-ordered-containers
@@ -31306,8 +31306,8 @@ self: {
        pname = "servant-swagger-ui";
        version = "0.3.0.3.13.2";
        sha256 = "0llkcag9bnhvni6ddar966i0pwql93s5icvw6pxa9ra5v14v7p5n";
-       revision = "1";
-       editedCabalFile = "1ka19i4r7s85qlpk5sm90gm5yf82nd03clgyqzm8w8jn7y3fji19";
+       revision = "2";
+       editedCabalFile = "0sz08w56f7p74saass6xdzmbpyk78hpa9d79kkd2nclwinajpkgr";
        libraryHaskellDepends = [
          base bytestring file-embed-lzma servant servant-server
          servant-swagger-ui-core swagger2 text
@@ -31325,6 +31325,8 @@ self: {
        pname = "servant-swagger-ui-core";
        version = "0.3.1";
        sha256 = "05lnm9p86rd9rxsz7f1zm5vkqzjcq2fd8an7c8y5fk4kxj6rydxb";
+       revision = "1";
+       editedCabalFile = "10p5yjzvfdn764mszlsx49kb55ygzi5m2mq32l9m91imvj1926b1";
        libraryHaskellDepends = [
          base blaze-markup bytestring http-media servant servant-blaze
          servant-server swagger2 text transformers transformers-compat
@@ -34630,23 +34632,6 @@ self: {
        homepage = "http://github.com/jgm/texmath";
        description = "Conversion between formats used to represent mathematics";
        license = stdenv.lib.licenses.gpl2;
-     }) {};
-  "text" = callPackage
-    ({ mkDerivation, array, base, binary, bytestring, deepseq, ghc-prim
-     , integer-gmp
-     }:
-     mkDerivation {
-       pname = "text";
-       version = "1.2.3.0";
-       sha256 = "06iir7q99rnffzxi8gagn8w1k9m49368sbidgz634fv1gxib3q10";
-       configureFlags = [ "-f-integer-simple" ];
-       libraryHaskellDepends = [
-         array base binary bytestring deepseq ghc-prim integer-gmp
-       ];
-       doCheck = false;
-       homepage = "https://github.com/haskell/text";
-       description = "An efficient packed Unicode text type";
-       license = stdenv.lib.licenses.bsd2;
      }) {};
   "text-binary" = callPackage
     ({ mkDerivation, base, binary, text }:

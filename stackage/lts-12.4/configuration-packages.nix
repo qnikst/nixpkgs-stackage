@@ -23,6 +23,7 @@ with haskellLib; self: super: {
   "rts" = null;
   "template-haskell" = null;
   "terminfo" = null;
+  "text" = null;
   "time" = null;
   "transformers" = null;
   "unix" = null;
