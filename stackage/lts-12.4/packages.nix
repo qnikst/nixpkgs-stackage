@@ -32947,17 +32947,6 @@ self: {
        description = "Staircase functions or piecewise constant functions";
        license = stdenv.lib.licenses.bsd3;
      }) {};
-  "stm" = callPackage
-    ({ mkDerivation, array, base }:
-     mkDerivation {
-       pname = "stm";
-       version = "2.4.5.0";
-       sha256 = "19sr11a0hqikhvf561b38phz6k3zg9s157a0f5ffvghk7wcdpmri";
-       libraryHaskellDepends = [ array base ];
-       homepage = "https://wiki.haskell.org/Software_transactional_memory";
-       description = "Software Transactional Memory";
-       license = stdenv.lib.licenses.bsd3;
-     }) {};
   "stm-chans" = callPackage
     ({ mkDerivation, base, Cabal, stm }:
      mkDerivation {
